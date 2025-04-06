@@ -1,44 +1,103 @@
-# 🚀 Smart Spacecraft Inventory Manager
+# 🚀 Spacecraft Inventory Manager
 
-An intelligent inventory management system designed specifically for organizing items within spacecraft containers. This app enables seamless item tracking, optimal spatial arrangement, and smarter long-term storage — all through an interactive interface powered by React and Python.
-
----
-
-## 🌟 Overview
-
-Managing space aboard a spacecraft is no small task. Our application simplifies it by allowing astronauts or mission operators to:
-
-- Upload item and container data
-- Automatically place items optimally into containers
-- Visualize placements in a user-friendly layout
-- Make decisions based on expiry, usage limits, and priority
-
-It’s not just about fitting boxes in space — it’s about sustainability, accessibility, and long-term mission success.
+An intelligent inventory and storage management system designed for spacecrafts and space missions. This application helps you manage containers and items, auto-place them efficiently based on space constraints, and prioritize critical resources — all through an intuitive interface and smart backend logic.
 
 ---
 
-## 🔧 Key Features
+## 🧠 What It Does
 
-### ✅ Smart Item Placement
-- Automatically places items inside available containers.
-- Respects dimensions, orientation, and volume constraints.
-- Considers **priority**, **expiry date**, **usage limits**, and **preferred zones**.
-- Minimizes repositioning for long-term efficiency.
-
-### 📂 CSV Upload Support
-- Upload item and container data via preformatted CSV files.
-- Instantly processed and visualized on the interface.
-
-### 🧠 Optimized Algorithm
-- Avoids dead space and difficult-to-reach arrangements.
-- Ensures that critical items are always easy to access.
-
-### 📊 Intuitive UI (React Frontend)
-- Clean dashboard to visualize container content.
-- Lists item metadata, zones, and placement status.
-- Smooth user experience for engineers and operators alike.
+- 📦 **Manages Containers**: Create and manage containers with defined 3D dimensions.
+- 📋 **Manages Items**: Upload items with properties like dimensions, priority, expiry date, usage limits, and preferred zones.
+- 🤖 **Auto-Placement Algorithm**: Automatically fits items into the best possible container, optimizing for space, accessibility, and long-term utility.
+- 📊 **Interactive UI**: A React frontend to upload CSVs, view placement results, and explore containers and their contents.
+- 🔁 **Smart Replacements**: Keeps track of item expiry and usage limits for dynamic updates.
 
 ---
 
-## 📁 Project Structure
+## 💡 Key Features
 
+- **CSV Uploads**: Upload a list of items and containers via clean CSV formats.
+- **Custom Parameters**: Every item can have:
+  - `ID`, `Name`
+  - `Width`, `Depth`, `Height` (rotatable)
+  - `Priority (0–100)`
+  - `Expiry Date`, `Usage Limit`
+  - `Preferred Zone` (optional)
+- **Optimized Placement**:
+  - High-priority items are more accessible.
+  - Expiring items are placed where they’re easy to remove.
+  - Minimal reshuffling of existing items.
+- **Modular**:
+  - Backend handles logic and validation.
+  - Frontend stays responsive and user-friendly.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer      | Tools Used                     |
+|------------|--------------------------------|
+| Frontend   | React, Tailwind CSS            |
+| Backend    | Python (Flask / FastAPI), Pandas |
+| File Input | CSV format                     |
+| Optional   | Three.js or 2D grid visualization |
+
+---
+
+## 📁 Example CSV Format
+
+### Items:
+```csv
+ID,Name,Width,Depth,Height,Priority,Expiry Date,Usage Limit,Preferred Zone
+1,Tool Kit,10,10,5,90,2025-05-01,15,A
+2,First Aid Box,15,12,10,95,2025-06-15,5,B
+3,Water Can,8,8,20,70,2025-04-20,30,C
+```
+
+
+
+### Container:
+```csv
+Container ID,Width,Depth,Height
+C1,50,50,50
+C2,30,30,30
+```
+
+## ⚙️ Running the App
+
+***Backend Setup:***
+bash
+Copy
+Edit
+cd backend
+pip install -r requirements.txt
+python app.py
+
+##Frontend Setup:
+cd frontend
+npm install
+npm start
+
+Visit: http://localhost:3000 to use the UI
+
+## 📈 Future Plans
+
+- Real-time visualizations of container layouts
+
+- Drag-and-drop manual override
+
+- Sorting items based on mission phases
+
+- REST API for integration with other spacecraft systems
+
+## 👨‍🚀 Built By
+This project was built as part of a space systems software design Hackathon to explore smarter resource management aboard spacecraft. It blends real-world logistics principles with zero-gravity-specific constraints.
+
+## 📬 Contact
+Have ideas, suggestions, or want to collaborate?
+
+📧 [danishaffan678@gmail.com]
+🔗 [https://www.linkedin.com/in/affan-danish-08a144353/]
+
+📄 License
+MIT License. Use it, improve it, share it.
