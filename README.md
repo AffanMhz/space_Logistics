@@ -46,14 +46,11 @@ An intelligent inventory and storage management system designed for spacecrafts 
 
 ## 🧭 Dashboard Preview
 
-## 🧭 Dashboard Preview
-
 ![Container Interface](screenshots/Container_Management.jpeg)
 
 ![Item Management](screenshots/Items_Management.jpeg)
 
 ---
-
 
 ## 📁 Example CSV Format
 
