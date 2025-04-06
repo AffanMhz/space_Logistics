@@ -100,4 +100,6 @@ Have ideas, suggestions, or want to collaborate?
 🔗 [https://www.linkedin.com/in/affan-danish-08a144353/]
 
 📄 License
-MIT License. Use it, improve it, share it.
+MIT License.
+
+### Use it, improve it, share it.
