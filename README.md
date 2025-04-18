@@ -104,8 +104,8 @@ This project was built as part of a space systems software design Hackathon to e
 ## 📬 Contact
 Have ideas, suggestions, or want to collaborate?
 
-📧 [danishaffan678@gmail.com]
-🔗 [https://www.linkedin.com/in/affan-danish-08a144353/]
+📧 danishaffan678@gmail.com
+🔗 https://www.linkedin.com/in/affan-danish-08a144353/
 
 📄 License
 MIT License.
